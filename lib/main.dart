@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         backgroundColor: Colors.lightBlue[400],
         appBar: AppBar(
-          title: Center(child: Text('Hello Ganteng')),
+          title: Center(child: Text('Ganteng')),
           backgroundColor: Colors.blue[200],
           leading: Icon(Icons.home),
           actions: <Widget>[
