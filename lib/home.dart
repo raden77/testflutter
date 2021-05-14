@@ -1,19 +1,30 @@
 import 'package:flutter/material.dart';
 
-void Main() => runApp(home());
+// void Main() => runApp(Home());
 
-class home extends StatefulWidget {
-  home({Key key}) : super(key: key);
-
-  @override
-  _homeState createState() => _homeState();
+void main() {
+  runApp(Home());
 }
 
-class _homeState extends State<home> {
+class Home extends StatefulWidget {
+  Home({Key key}) : super(key: key);
+
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(),
+      home: Scaffold(
+        backgroundColor: Colors.lightBlue[400],
+        appBar: AppBar(
+          leading: Icon(Icons.usb),
+          title: Center(child: Text('belajar')),
+          backgroundColor: Colors.orange[900],
+        ),
+      ),
     );
   }
 }

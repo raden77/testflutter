@@ -18,12 +18,27 @@ class _MyAppState extends State<MyApp> {
       title: "app flutter raden",
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.lightBlue[400],
         appBar: AppBar(
-          title: Text('hello raden'),
-          backgroundColor: Colors.red,
+          title: Center(child: Text('Hello Ganteng')),
+          backgroundColor: Colors.blue[200],
+          leading: Icon(Icons.home),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.menu),
+              onPressed: () {},
+            ),
+            PopupMenuButton(itemBuilder: (BuildContext context) {
+              return [
+                PopupMenuItem(child: Text("test1")),
+                PopupMenuItem(child: Text("test2")),
+                PopupMenuItem(child: Text("test3")),
+                PopupMenuItem(child: Text("test4")),
+              ];
+            }),
+          ],
         ),
-        body: Center(child: Text('Ini body')),
+        body: Center(child: Text('hello raden')),
       ),
     );
   }
